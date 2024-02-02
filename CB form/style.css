@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.clearfix {
+  clear: both;
+}
+
+body {
+  padding: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  /* height: 100vh; */
+  border: 2px solid black;
+  align-items: center;
+  display: flex;
+  /* background-color: aqua; */
+}
+.content {
+  width: 100%;
+  line-height: 2;
+  margin: 20px;
+}
+
+/* .content {
+  width: 100%;
+} */
+
+/* header ------------------------------ */
+.head {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  /* margin-top: 100px; */
+  /* background-color: #ded24f; */
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo img {
+  /* width: 200px; */
+
+  width: 100%;
+  /* height: 80px; */
+  /* border: 1px solid black; */
+}
+
+.title {
+  /* margin: 20px; */
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: underline;
+  /* padding: 0px 175px; */
+}
+
+/* user deatils---------------------- */
+.user-details {
+  /* width: 80%; */
+  margin: auto;
+  margin-top: 40px;
+}
+
+.user-details-table {
+  width: 100%;
+  /* border: 1px solid red; */
+  /* height: 200px; */
+}
+
+.user-details-info {
+  width: 45%;
+  /* height: 200px; */
+  /* border: 1px solid black; */
+}
+
+.user-details-field {
+  font-size: 20px;
+  /* margin: 10px 0; */
+}
+
+.user-details-input {
+  font-size: 18px;
+  width: 90%;
+  margin: 3px 0;
+}
+
+.user-fields-text {
+  float: left;
+  width: 25%;
+}
+.user-fields-input {
+  float: right;
+  width: 70%;
+  /* border: 1px solid orchid; */
+}
+
+.user-fields-input input {
+  padding: 2px;
+}
+
+/* course */
+.course {
+  display: flex;
+}
+.course div {
+  width: 100%;
+}
+
+.centre {
+  display: flex;
+}
+
+.centre div {
+  width: 100%;
+}
+.source {
+  display: flex;
+  /* flex-direction: row; */
+  /* font-size: 30px; */
+  /* color: green; */
+  /* border: 4px dashed green; */
+  /* padding: 5px; */
+  /* width: 400px; */
+}
+
+.source div {
+  width: 100%;
+}
+
+.tickmark {
+  padding-left: 15px;
+}
+.courses-checkbox {
+  margin: 0px 10px;
+  width: 18px;
+  height: 18px;
+}
