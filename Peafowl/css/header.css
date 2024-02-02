@@ -1,0 +1,94 @@
+
+
+.header-container{
+    padding: 10px 0px;
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.hamburer-menu{
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    height: 20px;
+    width: 30px;
+    padding: 10px 0px;
+
+    /* margin: 5px; */
+}
+
+.hamburer-menu div{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0px;
+    border-radius: 3px;
+}
+
+.wikilogo img{
+    width: 180px;
+    height: 50px;
+
+}
+
+.searchbar{
+    display: flex;
+    width: 500px;
+    /* border: 1px solid black; */
+    height: 30px;
+    margin: 10px 40px;
+    /* align-items: center; */
+}
+
+.searchbar div{
+    border: 1px solid black;
+    border-right: none;
+    position: relative;
+}
+.searchbar div img{
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    /* margin: 5px; */
+    /* border: 2px solid black; */
+    /* text-align: center; */
+}
+
+.searchbar div input{
+    width: 380px;
+    height: 28px;
+    padding: 0px 0px 0px 40px;
+    border: none;
+    font-size: 14px;
+}
+
+.searchbar button{
+    width: 70px;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid black;
+    /* padding: 0px 5px; */
+}
+
+.navbar{
+    /* background-color: #f7f7f7; */
+    text-align: right;
+    padding: 15px;
+    width: 40%;
+}
+
+.navbar a{
+    /* text-align: center; */
+    /* align-items: center; */
+    /* justif   y-content: center; */
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0px 5px;
+    color: #3366cc;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 0px 50px;
+}
+
+.mainpage-container{
+    /* border: 1px solid black; */
+    margin: 50px 0;
+    display: flex;
+    position: relative;
+}
