@@ -1,0 +1,83 @@
+
+
+.trend-border{
+    border-bottom: 1px solid black;
+    height: 350px;
+    margin-top: 40px;
+    width: 100%;
+    /* background-color: blue; */
+}
+.trending-articles{
+    /* border: 2px solid red; */
+    width: 1200px;
+    margin: auto;
+    /* padding: 0px 100px; */
+}
+
+.trending{
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+}
+.articles-list{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 10px; */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.article{
+    width: 32%;
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+    padding: 10px 0 10px 0;
+    
+}
+
+
+
+.number{
+    font-size: 36px;
+    /* border: 2px solid red; */
+    opacity: 0.1;
+    font-weight: bold;
+    padding-right: 20px;
+
+}
+.number-text{
+    display: flex;
+    /* border: 2px solid turquoise; */
+    gap: 10px;
+    margin-top: 10px;
+}
+.icon-trend{
+    border-radius: 5px;
+    width: 25px;
+}
+
+.number-headings{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.medium-paragraph{
+    color: #7a7a7a;
+    padding: 5px 0;
+}
+
+.number-text1{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.number-timestamp{
+    font-weight: 100;
+    font-size: 12px;
+    padding: 5px 0px;
+    opacity: 0.8;
+}
