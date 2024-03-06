@@ -10,8 +10,8 @@ function clock(){
     if(diff < 0)
     return false;
     // convert in days
-    // inputs[0].value = Math.floor(diff / 1000 / 60 / 60 / 24);
-    document.getElementById("days").innerHTML = Math.floor(diff / 1000 / 60 / 60 / 24);
+    inputs[0].value = Math.floor(diff / 1000 / 60 / 60 / 24);
+    // document.getElementById("days").innerHTML = Math.floor(diff / 1000 / 60 / 60 / 24);
     // convert in hours
     inputs[1].value = Math.floor(diff / 1000 / 60 / 60  % 24);
     // convert in minuts
