@@ -947,7 +947,8 @@ const questions = [
 let index = 0;
 let total = questions.length;
 let right = 0,
-  wrong = 0;
+  wrong = 0,
+  notAnswered = 0;
 const qBox = document.getElementById("quesbox");
 const ansBox = document.querySelectorAll(".ansbox");
 const loadQuestion = () => {
@@ -979,6 +980,9 @@ const quizSubmit = () => {
   if (ans === data.answer) {
     console.log(ans);
     right++;
+  } else if (ans === undefined) {
+    notAnswered++;
+    console.log(notAnswered);
   } else {
     wrong++;
   }
@@ -1012,7 +1016,8 @@ const endQuiz = () => {
     <hr>
     Total Question-${total} <br>
     Total Right Answer-${right}<br>
-    Total Wrong Answer-${wrong}
+    Total Wrong Answer-${wrong}<br>
+    Total Not Answered-${notAnswered}
   </div>
   `;
 };
