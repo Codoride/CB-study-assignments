@@ -20,14 +20,18 @@
         min-height: 100vh;
         background-color: black;
       }
-      .container{
+      .container {
         position: relative;
       }
-      .clock{
-        
-        width: 200px;
-        height: 200px;
-        background-color: rgba(255, 255, 255, 0.2);
+      .clock {
+        width: 300px;
+        height: 300px;
+        background-image: url("https://scontent.fdel3-1.fna.fbcdn.net/v/t1.18169-9/1901249_306710842844629_8659484231344028761_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=B1fMGnk55OsAX--Rh5l&_nc_ht=scontent.fdel3-1.fna&oh=00_AfAiztEVzNq225dhUl2Xndc-hgzWHZ2nvS2zH_DfPqbcAA&oe=6613F722");
+        /* background-origin: padding-box; */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        /* background-color: rgba(255, 255, 255, 0.2); */
         border: 18px solid rgba(139, 19, 19, 0.826);
         box-shadow: 0px 0px 30px 0.9;
         border-radius: 50%;
@@ -35,17 +39,17 @@
         justify-content: center;
         align-items: center;
       }
-      .clock span{
+      .clock span {
         position: absolute;
-        transform: rotate(calc(30deg*var(--i)));
+        transform: rotate(calc(30deg * var(--i)));
         inset: 0px;
         text-align: center;
       }
-      .clock span b{
-        transform: rotate(calc(-30deg*var(--i)));
+      .clock span b {
+        transform: rotate(calc(-30deg * var(--i)));
         display: inline-block;
       }
-      .clock::before{
+      .clock::before {
         content: "";
         position: absolute;
         width: 8px;
@@ -54,87 +58,92 @@
         background-color: white;
         z-index: 2;
       }
-      .hand{
+      .hand {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: flex-end;
       }
-      .hand i{
+      .hand i {
         position: absolute;
         background-color: var(--clr);
         width: 5px;
         height: var(--h);
-        border-radius:  50% 50% 10% 10% ;
-
+        border-radius: 50% 50% 10% 10%;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="clock">
-        <div style="--clr:#de0e0e; --h:60px;" id="hour" class="hand"><i></i></div>
-        <div style="--clr:#44ad24; --h:70px;" id="min" class="hand"><i></i></div>
-        <div style="--clr:#0d1bae; --h:80px;" id="sec" class="hand"><i></i></div>
-        <span style="--i:1;"><b style="--i:1;">1</b></span>
-        <span style="--i:2;"><b style="--i:2;">2</b></span>
-        <span style="--i:3;"><b style="--i:3;">3</b></span>
-        <span style="--i:4;"><b style="--i:4;">4</b></span>
-        <span style="--i:5;"><b style="--i:5;">5</b></span>
-        <span style="--i:6;"><b style="--i:6;">6</b></span>
-        <span style="--i:7;"><b style="--i:7;">7</b></span>
-        <span style="--i:8;"><b style="--i:8;">8</b></span>
-        <span style="--i:9;"><b style="--i:9;">9</b></span>
-        <span style="--i:10;"><b style="--i:10;">10</b></span>
-        <span style="--i:11;"><b style="--i:11;">11</b></span>
-        <span style="--i:12;"><b style="--i:12;">12</b></span>
+        <div style="--clr: #de0e0e; --h: 60px" id="hour" class="hand">
+          <i></i>
+        </div>
+        <div style="--clr: #44ad24; --h: 70px" id="min" class="hand">
+          <i></i>
+        </div>
+        <div style="--clr: #0d1bae; --h: 80px" id="sec" class="hand">
+          <i></i>
+        </div>
+        <span style="--i: 1"><b style="--i: 1">1</b></span>
+        <span style="--i: 2"><b style="--i: 2">2</b></span>
+        <span style="--i: 3"><b style="--i: 3">3</b></span>
+        <span style="--i: 4"><b style="--i: 4">4</b></span>
+        <span style="--i: 5"><b style="--i: 5">5</b></span>
+        <span style="--i: 6"><b style="--i: 6">6</b></span>
+        <span style="--i: 7"><b style="--i: 7">7</b></span>
+        <span style="--i: 8"><b style="--i: 8">8</b></span>
+        <span style="--i: 9"><b style="--i: 9">9</b></span>
+        <span style="--i: 10"><b style="--i: 10">10</b></span>
+        <span style="--i: 11"><b style="--i: 11">11</b></span>
+        <span style="--i: 12"><b style="--i: 12">12</b></span>
       </div>
     </div>
 
     <script>
-        // for hour hand
-        // 12hour=360deg
-        // 1hour=360/12=30deg
-        // h hour= 30h+m/2
+      // for hour hand
+      // 12hour=360deg
+      // 1hour=360/12=30deg
+      // h hour= 30h+m/2
 
-        // 
-        // 60 min =30deg
-        // 1min=30/60=1/2
-        // m min = m/2
+      //
+      // 60 min =30deg
+      // 1min=30/60=1/2
+      // m min = m/2
 
-        // for minut hand
-        // 60min = 360deg
-        // 1min = 6deg
-        // m min = 6m deg
+      // for minut hand
+      // 60min = 360deg
+      // 1min = 6deg
+      // m min = 6m deg
 
-        // for secounds hand
-        // 60sec=360deg
-        // 1sec=360/60 = 6deg
-        // s secs = 6s deg
+      // for secounds hand
+      // 60sec=360deg
+      // 1sec=360/60 = 6deg
+      // s secs = 6s deg
 
-        let hr =document.getElementById('hour')
-        let min =document.getElementById('min')
-        let sec =document.getElementById('sec')
+      let hr = document.getElementById("hour");
+      let min = document.getElementById("min");
+      let sec = document.getElementById("sec");
 
-        function displayTime(){
-            let date = new Date();
+      function displayTime() {
+        let date = new Date();
 
-            // getting hour , mins, and secs from date
-            let hh = date.getHours();
-            let mm = date.getMinutes();
-            let ss = date.getSeconds();
+        // getting hour , mins, and secs from date
+        let hh = date.getHours();
+        let mm = date.getMinutes();
+        let ss = date.getSeconds();
 
-            let hRotation = 30*hh + mm/2;
-            let mRotation = mm*6;
-            let sRotation = ss*6;
+        let hRotation = 30 * hh + mm / 2;
+        let mRotation = mm * 6;
+        let sRotation = ss * 6;
 
-            hr.style.transform = `rotate(${hRotation}deg)`
-            min.style.transform = `rotate(${mRotation}deg)`
-            sec.style.transform = `rotate(${sRotation}deg)`
-        }
+        hr.style.transform = `rotate(${hRotation}deg)`;
+        min.style.transform = `rotate(${mRotation}deg)`;
+        sec.style.transform = `rotate(${sRotation}deg)`;
+      }
 
-        setInterval(displayTime, 1000);
-        displayTime();
+      setInterval(displayTime, 1000);
+      displayTime();
     </script>
   </body>
 </html>
