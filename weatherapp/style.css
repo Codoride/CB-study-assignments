@@ -1,0 +1,39 @@
+.container{
+    /* display: flex; */
+    width: 80%;
+    height: auto;
+    margin: auto;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    border: 1px solid green;
+    background-color: rgb(210, 144, 222);
+    
+}
+.weather-info{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(81, 215, 170);
+}
+.error{
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    margin: auto;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+#location{
+    font-size: 30px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+#temperature{
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+input, button{
+    font-size: 20px;
+}
